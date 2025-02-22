@@ -1,0 +1,362 @@
+@media screen and (max-width:1080px) {
+    /* / help /  */
+    .my-account .help-sidebar .help-sidebar-inner {
+        height: 400px;
+    }
+    /* vishal */
+    /* edit profile */
+    .my-account .edit-profile {
+        padding: 16px;
+    }
+    .edit-profile-modal .personal-detail-buttons {
+        gap: 10px;
+        width: 100%;
+    }
+    .edit-profile-modal .close-button, .edit-profile-modal .save-button {
+        padding: 10px 30px !important;
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .my-account .grid {
+        grid-template-columns: 2fr 5fr;
+        gap: 20px;
+    }
+
+    .my-account .content-bg {
+        padding: 20px 15px;
+        margin-top: 20px;
+    }
+
+    .my-account .nav-tabs .nav-link {
+        font-size: 16px;
+        gap: 5px;
+    }
+
+    .my-account .right-dash h3 {
+        margin-top: 30px;
+        font-size: 18px;
+    }
+
+    .my-account .user-content.profile-content {
+        gap: 15px;
+    }
+
+    .profile-content .about-user a.btn.edit-btn {
+        top: 20px;
+        right: 20px;
+    }
+
+    .my-account h3 {
+        font-size: 20px;
+    }
+
+    .my-account .setup-btn {
+        padding: 12px 40px;
+    }
+
+    .my-account .no-review {
+        padding: 50px 0px;
+    }
+
+    .my-account .review-listing-page .review-card {
+        padding: 20px;
+    }
+
+    .my-account .review-listing-page .pagination {
+        font-size: 15px;
+        gap: 10px;
+        margin-top: 30px;
+    }
+    /* review-listing-page */
+    .my-account .review-page .popup-content,
+    .my-account .workspaces-page .popup-content {
+        padding: 20px 10px;
+        width: 100%;
+    }
+
+    /* / workspace / */
+     .my-account .workspaces-page .workspaces-add-btn,
+    .my-account .work-space-listing .space-list a.btn {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+    .my-account .work-space-listing .space-list p,
+    .my-account .work-space-listing .space-list span {
+        font-size: 15px;
+    }
+    .my-account .edit-profile-modal .notification-box {
+        width: 100%;
+    }
+
+    /* / help /  */
+    .my-account .help-sidebar {
+        width: 60%;
+    }
+    /* vishal */
+    /* edit profile */
+    .edit-profile-modal .personal-detail .text-box h3 {
+        font-size: 20px;
+    }
+    .edit-profile-modal .close-button, .edit-profile-modal .save-button {
+        padding: 10px 30px !important;
+    }
+    .edit-profile-modal .nav-tabs .nav-link img{
+        display: none;
+    }
+    /* interest */
+    .my-account .interest-tab .values-section{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .my-account .grid {
+        gap: 10px;
+    }
+
+    .my-account .content-bg {
+        padding: 15px 10px !important;
+        margin-top: 10px;
+    }
+    .my-account .right-dash h3 {
+        margin-top: 25px;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .my-account .nav-tabs .nav-link {
+        font-size: 0px;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .my-account .user-content.profile-content {
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+    .profile-content .about-user a.btn.edit-btn {
+        top: 10px;
+        right: 10px;
+    }
+    .my-account h2 {
+        font-size: 24px;
+        gap: 10px;
+    }
+    .my-account p {
+        font-size: 14px;
+    }
+
+    .my-account .review-header {
+        flex-direction: column;
+        margin-bottom: 20px;
+        align-items: flex-start;
+    }
+    .my-account .review-header .text-box {
+        width: 100%;
+    }
+    .my-account .review-header .filter-review-btn {
+        width: 50%;
+        margin-left: auto;
+    }
+    .my-account .review-page .popup-overlay {
+        top: 172px;
+    }
+    .my-account .popup-header{
+        padding-top: 10px;
+    }
+    .my-account .popup-header .close-btn {
+        font-size: 20px;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+    }
+    .my-account .review-page .rating-filter {
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .my-account .review-page .popup-content {
+        padding: 20px 10px;
+        width: 100%;
+    }
+    .my-account .review-page .close-btn {
+        font-size: 20px;
+    }
+    .my-account .review-page .actions {
+        gap: 15px;
+        flex-direction: column;
+    }
+    .my-account .review-page .clear-btn,
+    .my-account .review-page .apply-btn {
+        width: 100%;
+        padding: 10px 15px;
+    }
+    .my-account .review-page .rating-btn {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+    .my-account .no-review {
+        padding: 30px 0px;
+    }
+    .my-account .review-listing-page .review-card .flex-grow-1 .d-flex {
+        flex-direction: column;
+    }
+    .my-account .review-listing-page .pagination {
+        font-size: 13px;
+        gap: 5px;
+    }
+
+    /* / workspace / */
+     .my-account .workspaces-page .workspaces-add-btn {
+        width: 50%;
+        margin-left: auto;
+    }
+    .my-account .work-space-listing {
+        gap: 10px;
+    }
+    .my-account .work-space-listing .space-list {
+        gap: 15px;
+        flex-direction: column;
+    }
+    .my-account .work-space-listing .space-list h4 {
+        font-size: 16px;
+    }
+    .my-account .work-space-listing .space-list p,
+    .my-account .work-space-listing .space-list span {
+        font-size: 14px;
+    }
+    .my-account .workspaces-page .edit-work-space h4 {
+        font-size: 18px;
+    }
+    .my-account .workspaces-page .edit-work-space a.btn {
+        font-size: 14px;
+    }
+    .my-account .workspaces-page a.btn.delete-btn {
+        padding: 10px 15px;
+        margin-top: 10px;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    /* / help /  */
+    .my-account .help-sidebar {
+        width: 95%;
+        height: 0px;
+        overflow: hidden;
+        padding: 0px;
+    }
+
+    .my-account .help-sidebar.show {
+        transform: translateX(-700px);
+        height: max-content;
+        padding: 20px;
+        overflow: visible;
+    }
+
+    .my-account .help-sidebar .help-header .close-btn {
+        top: -30px;
+        left: -30px;
+    }
+    .my-account .help-sidebar .help-list li a {
+        padding-bottom: 10px;
+    }
+    .my-account .help-sidebar .help-list h4 {
+        font-size: 16px;
+        margin: 0px;
+    }
+    .my-account .help-sidebar .help-list p {
+        font-size: 14px;
+    }
+    .my-account .help-sidebar .help-link {
+        margin-top: 25px;
+        font-size: 16px;
+    }
+    /* vishal */
+    /* edit profile */
+    .my-account .edit-profile {
+        padding: 16px;
+    }
+    .my-account .edit-profile-modal .nav-tabs .nav-link img{
+      display: none;
+    }
+    .edit-profile-modal .img-box, .edit-profile-modal .form-container {
+        width: 100%;
+    }
+    .edit-profile-modal .close-button, .edit-profile-modal .save-button{
+        padding: 5px 10px !important;
+        width: 100%;
+        display: block !important;
+        text-align: center;
+    }
+    .edit-profile-modal .nav-tabs .nav-link img{
+        display: block;
+    }
+    .my-account .setting-page .grid{
+        grid-template-columns: 12fr;
+    }
+    .my-account .setting-page .left-dash .heading-info{
+        margin: 0px;
+        padding: 0px 0px 10px;
+    }
+    .my-account .setting-page .left-dash .text-box {
+        padding: 10px 30px 0px;
+    }
+    .my-account .setting-page .left-dash .security-settings {
+        padding: 10px 0px 10px;
+        margin: 0;
+    }
+    .my-account .setting-page .left-dash button{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .my-account .setting-page .left-dash .user-settings, .my-account .setting-page .left-dash .social-details{
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+    /* social links */
+    .my-account .social-link-tab .social-content {
+        margin-bottom: 20px;
+    }
+    .my-account .social-link-tab .social-input i {
+        left: 12px;
+        font-size: 16px;
+    }
+    .my-account .social-link-tab .social-input input {
+        padding: 10px 15px 10px 35px;
+        font-size: 14px;
+        width: 100%;
+    }
+    /* interest */
+    .my-account .interest-tab .values-section{
+        width: 100%;
+    }
+    .my-account .interest-tab .content-box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .my-account .interest-tab button {
+        border: 1px solid #EDEDED;
+        background-color: #FFFFFF;
+        padding: 5px 8px;
+        border-radius: 35px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        transition: 0.5s;
+    }
+    .my-account .interest-tab .badges-icon {
+        font-size: 10px;
+        font-style: normal;
+    }
+    .my-account .interest-tab span {
+        font-size: 11px;
+        font-weight: 500;
+    }
+    .my-account .interest-tab .values-section a{
+        font-size: 12px;
+    }
+}

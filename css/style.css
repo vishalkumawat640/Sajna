@@ -1,0 +1,1264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* global css */
+body {
+    font-family: "Poppins", serif;
+    overflow-x: hidden;
+    counter-reset: section;
+    background-color: #FAFAFA;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.text-info {
+    color: #6950f3 !important;
+}
+
+.profile-dropdown {
+    position: relative;
+}
+
+.profile-dropdown .profile {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    text-align: end;
+}
+
+.profile-dropdown .profile .img-box {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid #EDEDED;
+    border-radius: 30px;
+}
+
+.profile-dropdown .profile .img-box img {
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-dropdown .menu {
+    position: absolute;
+    top: calc(100% + 24px);
+    right: 16px;
+    min-height: 100px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    opacity: 0;
+    transform: translateY(-10px);
+    visibility: hidden;
+    transition: 300ms;
+    border-radius: 20px;
+    width: 320px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.profile-dropdown .menu.active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.profile-dropdown .menu .about-user {
+    text-align: center;
+}
+
+.profile-dropdown .menu img.profile_bg {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    display: block;
+}
+
+.profile-dropdown .menu .user-img {
+    margin-top: -54px;
+    position: relative;
+    display: inline-block;
+    height: 104px;
+}
+
+.profile-dropdown .menu .user-name h3 {
+    font-size: 18px;
+    margin: 5px 0px 0px;
+}
+
+.profile-dropdown .menu .about-user .profile-complete-msg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -15px;
+}
+
+.profile-dropdown .menu .profile-complete-msg {
+    background-color: #D12828;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.profile-dropdown .menu .profile-verify {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    align-items: center;
+    padding: 15px;
+    background-color: #F6B201;
+    margin: 10px 20px 20px;
+    border-radius: 10px;
+    text-align: left;
+    gap: 15px;
+}
+
+.profile-dropdown .menu .profile-verify .icon-box {
+    background-color: #fff;
+}
+
+.profile-dropdown .menu .icon-box {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.profile-dropdown .menu .profile-verify p {
+    margin: 0px;
+    font-size: 12px;
+}
+
+.profile-dropdown .menu .profile-verify h4 {
+    margin: 0px;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.profile-dropdown .menu ul.nav-items {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    background: #fff;
+    padding: 0px 20px 20px;
+    gap: 20px;
+}
+
+.profile-dropdown .menu ul.nav-items li {
+    list-style-type: none;
+}
+
+.profile-dropdown .menu ul.nav-items li a.nav-link {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    font-size: 14px;
+}
+
+.profile-dropdown .menu ul.nav-items li a.nav-link i {
+    position: absolute;
+    right: 0px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.profile-dropdown .menu ul.nav-items li a.nav-link:hover i {
+    transform: rotate(90deg);
+}
+
+.profile-dropdown .menu ul.nav-items .icon-box {
+    background-color: #FFF4EB;
+}
+
+.profile-dropdown .menu ul.nav-items a.nav-link.setup-link .icon-box {
+    background-color: #E1FFE4;
+}
+
+.profile-dropdown .menu ul.nav-items a.nav-link.setup-link {
+    color: #00C013;
+    font-weight: 500;
+}
+
+.profile-dropdown .menu ul.nav-items a.nav-link.logout-link .icon-box {
+    background-color: #FFECEC;
+}
+
+.profile-dropdown .menu ul.nav-items a.nav-link.logout-link {
+    color: #E93B3B;
+    font-weight: 500;
+}
+
+.my-account .content-bg {
+    padding: 30px !important;
+    border: 1px solid #EDEDED;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0px 0px 14px 0px #0000000d;
+    margin-top: 30px;
+}
+
+.grid-box.left-dash.content-bg {
+    position: relative;
+}
+
+.grid-box.left-dash.content-bg:has(.popup-overlay.show)::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff99;
+    z-index: 99;
+}
+
+.my-account .grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 30px;
+}
+.my-account .nav-tabs{
+    flex-direction: column;
+}
+
+.my-account .user-content.profile-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.my-account h2 {
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0px;
+    /* //////// */
+}
+.user-profile span.activity-status {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 30px;
+}
+.user-profile span.activity-status.online {
+    color: #fff;
+    background-color: #34C759;
+}
+.my-account p {
+    color: #868686;
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.profile-content .about-user{
+    position: relative;
+}
+.profile-content .about-user a.btn.edit-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border: 1px solid #EDEDED;
+    padding: 5px 15px;
+    font-size: 14px;
+}
+.profile-content .about-user .user-img {
+    padding: 35px 0px 10px;
+}
+.profile-content .about-user .user-img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.my-account h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.my-account h3:nth-of-type(1){
+    margin-top: 0px;
+}
+.profile-content .about-user p.user-address {
+    color: #000;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EDEDED;
+    margin-bottom: 20px;
+}
+.profile-content .about-user h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.profile-content .selected-lang span {
+    padding: 6px 20px;
+    border: 1px solid #868686;
+    color: #868686;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 14px;
+}
+/* vishal */
+.my-account .setup-btn{
+    background-color: #D2B37A;
+    color: #FFFFFF;
+    border-radius: 58px;
+    padding: 16px 65px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.my-account .user-profile .img-box{
+    background-color: #F0F0FF;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50%;
+}
+.my-account .back-btn{
+    color: #00AAFF;
+    padding: 0;
+}
+.my-account .right-dash h3{
+    color: #00C013;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.my-account .nav-tabs .nav-link{
+    width: 100%;
+    font-size: 18px;
+    color: #030303;
+    text-align: left;
+    border: 0;
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    transition: 0.8s;
+}
+.my-account .nav-tabs .nav-link.active,
+.my-account .nav-tabs .nav-link:hover{
+    background-color: #F0F0FF;
+}
+.my-account .nav-tabs .nav-link img{
+    width: 20px;
+    height: 20px;
+}
+.edit-profile-modal .nav-tabs .nav-link img{
+    display: none;
+}
+.my-account .other-info .info-box p{
+    color: #000000;
+}
+/* review */
+.my-account .no-review .img-box{
+    background-color: #F0F0FF;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50%;
+}
+.my-account .no-review{
+    padding: 100px 0px;
+    border: 1px solid #EDEDED;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0px 0px 14px 0px #0000000d;
+    text-align: center;
+    margin-top: 25px;
+}
+.my-account .no-review p{
+    color: #000000;
+}
+.my-account .review-header {
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.my-account .review-header .text-box {
+    width: 80%;
+}
+.my-account .review-header .filter-review-btn {
+    border: 1px solid #EDEDED;
+    padding: 10px;
+    color: #000000;
+    white-space: nowrap;
+}
+/* edit-profile */
+.my-account .edit-profile{
+    padding: 30px;
+}
+.my-account .edit-profile .content-bg{
+    margin-top: 0;
+}
+.edit-profile-modal .personal-detail .text-box h3{
+    font-size: 24px;
+    color: #000000;
+}
+.edit-profile-modal{
+    background-color: #FFFFFF !important;
+    height: 90%;
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.edit-profile-modal .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+}
+.edit-profile-modal .modal-backdrop.fade {
+    opacity: 1;
+}
+.edit-profile-modal .modal-content {
+    border: none;
+}
+.edit-profile-modal .personal-detail-buttons{
+    display: flex;
+    align-items: center;
+    /* /////// */
+    justify-content: end;
+    gap: 30px;
+}
+.edit-profile-modal .close-button, .edit-profile-modal .save-button{
+    padding: 14px 50px !important;
+    font-size: 17px !important;
+    display: inline-block !important;
+}
+.edit-profile-modal .close-button{
+    background-color: #FFFFFF;
+    border: 1px solid #D2B37A;
+    color: #D2B37A;
+    border-radius: 58px;
+}
+.edit-profile-modal .save-button{
+    background-color: #D2B37A;
+    color: #FFFFFF;
+    border-radius: 58px;
+    border: #D2B37A;
+}
+.edit-profile-modal .img-box, .edit-profile-modal .form-container{
+    width: 70%;
+}
+.edit-profile-modal .edit-user-img{
+    padding: 35px 0px 30px;
+}
+/* add */
+.edit-profile-modal form,
+.personal-information-modal form{
+    margin-top: 20px;
+}
+.edit-profile-modal .form-container label,
+.personal-information-modal label{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+}
+.edit-profile-modal .form-container .form-input,
+.personal-information-modal .form-input{
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #EDEDED;
+    color: #000000;
+    font-size: 16px;
+    padding: 10px 20px;
+    outline: none;
+}
+.edit-profile-modal .form-container .form-textarea{
+    width: 100%;
+    height: 150px;
+    border-radius: 6px;
+    border: 1px solid #EDEDED;
+    color: #000000;
+    font-size: 16px;
+    padding: 10px 20px;
+    outline: none;
+    resize: none;
+}
+/* add */
+.edit-profile-modal .edit-img{
+    position: relative;
+    display: inline-block;
+}
+.edit-profile-modal .edit-img i{
+    background-color: #d8d6d6;
+    padding: 6px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    z-index: 1;
+    color: black;
+}
+/* review-listing-page */
+
+.my-account .review-listing{
+    margin-top: 25px;
+    display: grid;
+    gap: 15px;
+}
+.my-account .review-listing-page .review-card {
+    border-radius: 12px;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.11);
+    border: 1px solid #EDEDED;
+}
+.my-account .review-listing-page .profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.my-account .review-listing-page .review-text {
+    font-size: 14px;
+    color: #868686;
+    width: 100%;
+    margin-top: 10px;
+}
+.my-account .review-listing-page .user-info h6 {
+    margin-bottom: 0;
+    color: #030303;
+    font-weight: 600;
+}
+.my-account .review-listing-page .time {
+    font-size: 14px;
+    color: #868686;
+    font-weight: 500;
+}
+.my-account .review-listing-page .star-rating{
+    display: flex;
+    gap: 4px;
+}
+.my-account .review-listing-page .star-rating i{
+    color: #f1c40f;
+    font-size: 15px;
+}
+
+
+/* ///////////////////// new /////////////////////// */
+/* setting page */
+.my-account .setting-page .grid{
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+.my-account .setting-page .right-dash h2{
+    margin: 15px 0px;
+    font-size: 24px;
+}
+.my-account .setting-page .right-dash p{
+    color: #000000;
+}
+.my-account .setting-page .left-dash{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.my-account .setting-page .left-dash .content-bg{
+    margin-top: 0;
+}
+.my-account .setting-page .left-dash .heading-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px 20px;
+    border-bottom: 1px solid #000000;
+    margin: 0px -30px;
+}
+.my-account .setting-page .left-dash .heading-info h3{
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+}
+.my-account .setting-page .left-dash .text-box{
+    padding: 20px 30px 0px;
+    margin: 0px -30px;
+}
+.my-account .setting-page .left-dash h4{
+    font-weight: 600;
+    font-size: 16px;
+}
+.my-account .setting-page .left-dash .text-box p{
+    font-size: 14px;
+}
+.my-account .setting-page .left-dash .user-settings,
+.my-account .setting-page .left-dash .social-details
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.my-account .setting-page .left-dash button{
+    padding: 15px 30px;
+    border-radius: 58px;
+}
+.my-account .primary-btn{
+    background-color: #FFFFFF;
+    border: 1px solid #D2B37A;
+    color: #D2B37A;
+}
+.my-account .secondary-btn{
+    background-color: #D2B37A;
+    color: #FFFFFF;
+    border: #D2B37A;
+}
+.my-account .setting-page .left-dash .security-settings{
+    border-bottom: 1px solid #000000;
+    padding: 20px 30px 20px;
+}
+.my-account .setting-page .left-dash .social-details{
+    margin-top: 34px;
+}
+.my-account .setting-page .left-dash .social-details .user-detail{
+    display: flex;
+    gap: 10px;
+}
+.my-account .setting-page .left-dash .social-details img{
+    width: 24px;
+    height: 24px;
+}
+.my-account .setting-page .left-dash .text-box .hide-button{
+    margin-top: 10px;
+}
+.my-account .setting-page .left-dash .text-box .delete-button{
+    margin-top: 10px;
+    background-color: #E93B3B;
+    color: #FFFFFF;
+    border: none;
+}
+.my-account .setting-page .password-box{
+    width: 100%;
+    position: relative;
+}
+.my-account .setting-page .password-box input{
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #EDEDED;
+    color: #000000;
+    font-size: 16px;
+    padding: 10px 20px;
+    outline: none;
+}
+.my-account .setting-page .password-box button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: #FFFFFF;
+    border: none;
+    padding: 0px ;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+.my-account .review-listing-page .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    gap: 12px;
+    margin-top: 50px;
+}
+.my-account .review-listing-page .pagination a {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+.my-account .review-listing-page .pagination a.active {
+    color: orange;
+}
+.my-account .review-listing-page .pagination .button{
+  border: none;
+  background-color: #FFFFFF;
+  padding: 0;
+  color: #000000;
+}
+/* edit */
+.my-account .review-page,
+.my-account .workspaces-page{
+    position: relative;
+}
+
+.my-account .review-page .popup-overlay,
+.my-account .workspaces-page .popup-overlay {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+    height: 0px;
+    overflow: hidden;
+    z-index: 100;
+}
+.my-account .review-page .popup-content,
+.my-account .workspaces-page .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    position: relative;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    width: 80%;
+    margin: auto;
+    border: 6px solid #EDEDED;
+}
+.my-account .review-page .popup-overlay.show,
+.my-account .workspaces-page .popup-overlay.show {
+    opacity: 1;
+    height: max-content;
+}
+
+.my-account .review-page .popup-overlay.show .popup-content,
+.my-account .workspaces-page .popup-overlay.show .popup-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+.my-account .popup-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.my-account .popup-header .close-btn {
+    font-size: 24px;
+    cursor: pointer;
+}
+.my-account .review-page .filter-form label {
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+}
+.my-account .review-page .filter-form select {
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #ededed;
+}
+.my-account .review-page .filter-form h3 {
+    font-size: 18px;
+    margin: 30px 0px 10px;
+    font-weight: 600;
+}
+.my-account .review-page .rating-filter {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.my-account .review-page .rating-btn {
+    padding: 12px 12px;
+    border: 1px solid #ededed;
+    border-radius: 6px;
+    cursor: pointer;
+    background: white;
+    font-size: 17px;
+    font-weight: 600;
+    position: relative;
+}
+
+.my-account .review-page .rating-btn.active {
+    background: #7d5fff47;
+    color: white;
+    border-color: #7d5fff;
+}
+.my-account .review-page .rating-btn.active::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/sajna_select_rating_check.svg);
+    right: -10px;
+    top: -10px;
+    height: 25px;
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.my-account .review-page .actions {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    gap: 30px;
+}
+.my-account .review-page .clear-btn, 
+.my-account .review-page .apply-btn {
+    padding: 15px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 220px;
+}
+.my-account .review-page .clear-btn {
+    background: transparent;
+    color: #D2B37A;
+    border: 1px solid;
+}
+
+.my-account .review-page .apply-btn {
+    background: #D2B37A;
+    color: white;
+}
+
+
+/* workspace */
+.my-account .workspaces-page .workspaces-add-btn{
+    background-color: #D2B37A;
+    color: #FFFFFF;
+    font-size: 17px;
+    padding: 16px 36px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.my-account .work-space-listing {
+    display: grid;
+    gap: 20px;
+}
+
+.my-account .work-space-listing .space-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.my-account .work-space-listing .space-list .space-content {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.my-account .work-space-listing .space-list h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0px;
+}
+.my-account .work-space-listing .space-list p{
+    color: #000;
+    margin: 10px 0px;
+}
+.my-account .work-space-listing .space-list a.btn{
+    color: #D2B37A;
+    font-size: 17px;
+    padding: 16px 50px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: 1px solid #D2B37A;
+}
+.my-account .workspaces-page .edit-work-space h4 {
+    margin: 0px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.my-account .workspaces-page .edit-work-space a.btn {
+    color: #6950f3;
+    padding: 0px;
+}
+
+.my-account .workspaces-page .edit-work-space p {
+    margin: 0px;
+    color: #000;
+}
+
+.my-account .workspaces-page a.btn.delete-btn {
+    padding: 10px 30px;
+    display: inline-block;
+    background-color: #d4163a;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.my-account .workspaces-page #add-workspace p {
+    margin: 20px 0px;
+}
+
+.my-account .workspaces-page #add-workspace button.btn-close-btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #D2B37A;
+    color: #ffffff;
+    border: none;
+}
+
+
+.my-account .edit-profile-modal .choose-calender .calender-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.my-account .edit-profile-modal .choose-calender .calender-box img {
+    width: 24px;
+    height: 24px;
+}
+
+.my-account .edit-profile-modal .delete-workspace-form .input-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.my-account .edit-profile-modal .delete-workspace-form .input-box input[type="radio"] {
+    width: 18px;
+    height: 18px;
+}
+
+
+
+.my-account .edit-profile-modal .notification-box {
+    width: 60%;
+}
+
+.my-account .edit-profile-modal .manage-notifications h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.my-account .edit-profile-modal .manage-notifications p {
+    font-size: 15px;
+    color: #000;
+}
+
+.my-account .edit-profile-modal .manage-notifications .input-box {
+    margin-top: 20px;
+}
+
+.my-account .edit-profile-modal .manage-notifications .input-box select,
+.my-account .edit-profile-modal .manage-notifications .input-box input[type="text"] {
+    padding: 10px 15px;
+    border: 1px solid #ededed;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+.my-account .edit-profile-modal .manage-notifications .input-box:has(input[type="checkbox"]) {
+    display: grid;
+    align-items: flex-start;
+    gap: 10px;
+    grid-template-columns: 1fr 30fr;
+}
+
+.my-account .edit-profile-modal .manage-notifications .input-box input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    margin-top: 4px;
+    appearance: none;
+    border: 1px solid #d5d7da;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px 0 rgba(16, 25, 40, .06);
+}
+
+.my-account .edit-profile-modal .manage-notifications .input-box input[type="checkbox"]:checked {
+    background-image: url(../images/sajna_notify_check.svg);
+    background-position: center;
+    background-size: contain;
+}
+
+.my-account .edit-profile-modal .manage-notifications .input-box label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+}
+
+.my-account .edit-profile-modal .manage-notifications .input-box small {
+    font-size: 12px;
+}
+
+/* help */
+
+.my-account .help-sidebar {
+    position: fixed;
+    top: 20px;
+    right: -800px;
+    width: 50%;
+    background: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.4s ease-in-out;
+    transform: translateX(0);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.my-account .help-sidebar.show {
+    transform: translateX(-750px);
+}
+
+.my-account .help-sidebar .help-header {
+    position: relative;
+}
+
+.my-account .help-sidebar .help-header .close-btn {
+    position: absolute;
+    top: -20px;
+    left: -60px;
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.my-account .help-sidebar .help-sidebar-inner {
+    overflow: auto;
+    height: 500px;
+}
+
+.my-account .help-sidebar .search-input {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 35px 0px 25px;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    background-image: url(../images/sajna_search_input.svg);
+    padding-left: 49px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: left 20px center;
+}
+
+.my-account .help-sidebar .search-input::placeholder {
+    color: #868686;
+}
+
+.my-account .help-sidebar .help-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.my-account .help-sidebar .help-list li {
+    background-image: url(../images/sajna_help_file.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: left 0px top 15px;
+    margin-bottom: 20px;
+}
+
+.my-account .help-sidebar .help-list li a {
+    padding-bottom: 20px;
+    display: block;
+    border-bottom: 2px solid #ededed;
+    margin-left: 30px;
+}
+
+.my-account .help-sidebar .help-list h4 {
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+}
+
+.my-account .help-sidebar .help-list p {
+    font-size: 15px;
+}
+
+.my-account .help-sidebar .help-link {
+    display: block;
+    margin-top: 30px;
+    color: #7d5fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+/* language */
+
+.my-account .language-page a.btn.add-lang-btn {
+    border: 1px solid #000;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: inline-flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.my-account .language-page .popup-header button.btn-close-btn {
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+    font-size: 20px;
+}
+.my-account .language-page .search-box {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #bfbfbf;
+    background-image: url(../images/sajna_search_input.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: left 15px center;
+    padding-left: 45px;
+}
+.my-account .language-page .dropdown {
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+    margin-top: 30px;
+}
+.my-account .language-page .dropdown div {
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.my-account .language-page .dropdown div:hover {
+    background-color: #f0f0f0;
+}
+.my-account .language-page .selected-languages {
+    margin-top: 30px;
+}
+.my-account .language-page .language-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 2px solid #ededed;
+    font-size: 18px;
+    font-weight: 500;
+}
+.my-account .language-page .delete-btn {
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+/* vishal */
+/* social links */
+.my-account .social-link-tab .social-content{
+    margin-bottom: 24px;
+}
+.my-account .social-link-tab .social-input {
+    position: relative;
+}
+
+.my-account .social-link-tab .social-input i {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #b0b0b0;
+    font-size: 24px;
+}
+
+.my-account .social-link-tab .social-input input {
+    padding: 15px 20px 15px 50px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #FFFFFF;
+    color: #b0b0b0;
+    outline: none;
+    width: 70%;
+}
+.my-account .social-link-tab .add-btn{
+    background-color: #FFFFFF;
+    color: #b0b0b0;
+    border: 1px solid #ddd;
+    padding: 10px 20px; 
+    border-radius: 58px;
+}
+
+.my-account .social-link-tab .social-input input::placeholder {
+    color: #b0b0b0;
+}
+/* interest */
+.my-account .interest-tab .values-section{
+    width: 75%;
+}
+.my-account .interest-tab .values-section:last-child{
+    margin-bottom: 0px;
+}
+.my-account .interest-tab .content-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.my-account .interest-tab button{
+    border: 1px solid #EDEDED;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 5px 15px;
+    border-radius: 35px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    transition: 0.5s;
+}
+.my-account .interest-tab button:hover{
+    background-color: #EDEDED;
+}
+.my-account .interest-tab span{
+    font-size: 15px;
+    font-weight: 500;
+    color: #000000;
+}
+.my-account .interest-tab .badges-icon{
+    font-size: 13px;
+    font-style: normal;
+}
+.my-account .interest-tab .interest-badges.selected {
+    background-color: #D2B37A;
+    border-color: #D2B37A;
+}
+.my-account .interest-tab .values-section a{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000000;
+    margin-top: 10px;
+    transition: 0.8s;
+}
+.my-account .interest-tab .values-section a:hover{
+    text-decoration: underline;
+}

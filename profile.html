@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <div class="container py-3">
+    <div class="profile-dropdown">
+      <div class="profile">
+        <div class="img-box">
+          <img src="images/sajna_user_profile.svg" alt="user_pfrofile">
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="about-user ">
+          <img src="images/sajna_user_profile_bg.svg" alt="profile_bg" class="profile_bg">
+          <div class="user-img">
+            <img src="images/sajna_user_profile_main.svg" alt="user">
+            <span class="profile-complete-msg">75%</span>
+          </div>
+          <div class="user-name">
+            <h3>Jone Jacob</h3>
+          </div>
+          <div class="profile-verify verify-profile-msg">
+            <div class="img-box">
+              <div class="icon-box">
+                <img src="images/sajna_mail_icon.svg" alt="mail">
+              </div>
+
+            </div>
+            <div class="text-box">
+              <p>Verify your email address</p>
+              <h4>Check Now</h4>
+            </div>
+          </div>
+        </div>
+
+        <ul class="nav-items">
+          <li><a href="#" class="nav-link setup-link">
+              <div class="icon-box">
+                <img src="images/sajna_profile_icon_active.svg" alt="profile">
+              </div>
+              <span class="item-text">
+                Complete Setup <i class="fa-solid fa-angle-right"></i>
+              </span>
+              <span class="profile-complete-msg">75%</span>
+            </a>
+          </li>
+          <li><a href="#" class="nav-link profile-link">
+              <div class="icon-box">
+                <img src="images/sajna_profile_icon.svg" alt="profile">
+              </div>
+              <span class="item-text">
+                My Profile <i class="fa-solid fa-angle-right"></i>
+              </span>
+            </a>
+          </li>
+          <li><a href="#" class="nav-link review-link">
+              <div class="icon-box">
+                <img src="images/sajna_review_icon.svg" alt="review">
+              </div>
+              <span class="item-text">
+                Reviews <i class="fa-solid fa-angle-right"></i>
+              </span>
+            </a>
+          </li>
+          <li><a href="#" class="nav-link setting-link">
+              <div class="icon-box">
+                <img src="images/sajna_setting_icon.svg" alt="Settings">
+              </div>
+              <span class="item-text">
+                Settings <i class="fa-solid fa-angle-right"></i>
+              </span>
+            </a>
+          </li>
+          <li><a href="#" class="nav-link Workspace-link">
+              <div class="icon-box">
+                <img src="images/sajna_workspace_icon.svg" alt="Workspaces">
+              </div>
+              <span class="item-text">
+                Workspaces <i class="fa-solid fa-angle-right"></i>
+              </span>
+            </a>
+          </li>
+          <li><a href="#" class="nav-link help-link">
+              <div class="icon-box">
+                <img src="images/sajna_help_icon.svg" alt="Help">
+              </div>
+              <span class="item-text">
+                Help Center <i class="fa-solid fa-angle-right"></i>
+              </span>
+            </a>
+          </li>
+          <li><a href="#" class="nav-link language-link">
+              <div class="icon-box">
+                <img src="images/sajna_language_icon.svg" alt="language">
+              </div>
+              <span class="item-text">
+                English <i class="fa-solid fa-angle-right"></i>
+              </span>
+            </a>
+          </li>
+          <li><a href="#" class="nav-link logout-link">
+              <div class="icon-box">
+                <img src="images/sajna_logout_icon.svg" alt="Logout">
+              </div>
+              <span class="item-text">
+                Logout <i class="fa-solid fa-angle-right"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section class="my-account user-account-info">
+    <div class="container-fluid">
+      <div class="grid">
+        <div class="grid-box right-dash content-bg" id="right-user-dash">
+          <div class="back-to-home">
+            <a href="#" class="btn back-btn"><i class="fa-solid fa-arrow-left"></i> Back</a>
+          </div>
+          <h3>Your account</h3>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="true">
+                <img src="images/sajna_profile_icon.svg" alt="profile"> My Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review-tab-pane"
+                type="button" role="tab" aria-controls="review-tab-pane" aria-selected="false"><img
+                  src="images/sajna_review_icon.svg" alt="review"> Review</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="setting-tab" data-bs-toggle="tab" data-bs-target="#setting-tab-pane"
+                type="button" role="tab" aria-controls="setting-tab-pane" aria-selected="false"><img
+                  src="images/sajna_setting_icon.svg" alt="review"> Setting</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="work-tab" data-bs-toggle="tab" data-bs-target="#work-tab-pane" type="button"
+                role="tab" aria-controls="work-tab-pane" aria-selected="false"><img
+                  src="images/sajna_workspace_icon.svg" alt="workspace"> Workspaces</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="help-tab" data-bs-toggle="tab" data-bs-target="#help-tab-pane" type="button"
+                role="tab" aria-controls="help-tab-pane" aria-selected="false"><img src="images/sajna_help_icon.svg"
+                  alt="help"> Help Center</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="lang-tab" data-bs-toggle="tab" data-bs-target="#lang-tab-pane" type="button"
+                role="tab" aria-controls="lang-tab-pane" aria-selected="false"><img src="images/sajna_help_icon.svg"
+                  alt="help"> English</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a href="#" class="nav-link text-danger"><img src="images/sajna_logout_icon.svg" alt="logout"> Logout</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="grid-box left-dash content-bg" id="left-user-dash">
+          <div class="tab-content" id="myTabContent">
+
+            <div class="tab-pane fade show active" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+              tabindex="0">
+
+              <div class="user-profile profile-page">
+                <h2>My profile <span class="activity-status online">Online</span></h2>
+                <p>Edit and manage the content of your online profile</p>
+
+                <div class="user-content profile-content">
+                  <div class="about-user text-center content-bg">
+                    <div class="user-img">
+                      <img src="images/sajna_user_profile_avatar.svg" alt="profile">
+                      <a href="#" class="btn edit-btn edit-profile" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">Edit</a>
+                    </div>
+                    <h3 class="username">Jone Jacob</h3>
+                    <p class="user-expertise">Manicure Specialist</p>
+                    <p class="user-review">No reviews yet</p>
+                    <p class="user-address">Hsr Layout, Bengaluru</p>
+
+                    <div class="selected-lang user-lang text-start">
+                      <h4>Languages</h4>
+                      <span>English</span>
+                    </div>
+
+                  </div>
+                  <div class="other-info">
+                    <div class="info-box portfolio-box text-center content-bg">
+                      <h3 class="text-start">Portfolio</h3>
+                      <div class="img-box">
+                        <img src="images/sajna_portfolio_icon.svg" alt="portfolio">
+                      </div>
+                      <h3>No images added</h3>
+                      <p>Add your images to your online portfolio that best reflect your creativity and work</p>
+                      <a href="#" class="btn setup-btn add-img-btn">Set Up Now</a>
+                    </div>
+                    <div class="info-box interest-box text-center content-bg">
+                      <h3 class="text-start">Interests</h3>
+                      <div class="img-box">
+                        <img src="images/sajna_interest_icon.svg" alt="interest">
+                      </div>
+                      <h3>No interests</h3>
+                      <p>Continue setting up your profile to fill in your interests</p>
+                      <a href="#" class="btn setup-btn add-intrest-btn">Set Up Now</a>
+                    </div>
+                    <div class="info-box interest-box text-center content-bg">
+                      <h3 class="text-start">Social links</h3>
+                      <div class="img-box">
+                        <img src="images/sajna_social_icon.svg" alt="social">
+                      </div>
+                      <h3>No social links</h3>
+                      <p>Add social links to your profile to help build your discoverability</p>
+                      <a href="#" class="btn setup-btn add-social-btn">Set Up Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="tab-pane fade" id="review-tab-pane" role="tabpanel" aria-labelledby="review-tab" tabindex="0">
+              <div class="review-page">
+                <div class="review-header d-flex justify-content-between align-items-center">
+                  <div class="text-box">
+                    <h2>Reviews</h2>
+                    <p>See star ratings and reviews left by clients after their visit. <span class="text-info"> Learn
+                        more</span></p>
+                  </div>
+                  <a href="#" class="btn filter-review-btn">Filters <img src="images/sajna_filter_icon.webp" width="24"
+                      height="24" alt="filter_icon"></a>
+
+                  <div class="popup-overlay" id="popup">
+                    <div class="popup-content">
+                      <div class="popup-header">
+                        <h2>Filters</h2>
+                        <span class="close-btn" id="closePopup"><i class="fa-solid fa-xmark"></i></span>
+                      </div>
+
+                      <form class="filter-form">
+                        <label for="workspace">Workspaces</label>
+                        <select id="workspace">
+                          <option>All workspaces</option>
+                          <option>Workspace 1</option>
+                          <option>Workspace 2</option>
+                        </select>
+
+                        <h3>Rating</h3>
+                        <div class="rating-filter">
+                          <button class="rating-btn active">All</button>
+                          <button class="rating-btn">5 stars</button>
+                          <button class="rating-btn">4 stars</button>
+                          <button class="rating-btn">3 stars</button>
+                          <button class="rating-btn">2 stars</button>
+                          <button class="rating-btn">1 star</button>
+                        </div>
+
+                        <div class="actions">
+                          <button class="btn clear-btn">Clear Filters</button>
+                          <button class="btn apply-btn">Apply</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="no-review review-header">
+                  <div class="img-box">
+                    <img src="images/sajna_review_icon.svg" width="32" height="32" alt="portfolio">
+                  </div>
+                  <h3>No reviews yet</h3>
+                  <p>Clients have not provided feedback for their appointments yet.</p>
+                </div>
+              </div>
+              <div class="review-listing-page">
+                <h3>5 Star Reviews Lists</h3>
+                <p>See star ratings and reviews left by clients after their visit.<span class="text-info">&nbsp;Learn
+                    more</span></p>
+                <div class="review-listing">
+                  <div class="review-card">
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="images/sajna-user-review.webp" alt="user-review" class="profile-img">
+                      <div class="flex-grow-1">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="user-info">
+                            <h6>Theresa Webb</h6>
+                            <span class="time">1 hr</span>
+                          </div>
+                          <div class="star-rating secondary">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <p class="review-text">
+                      ‘’Sajana is a popular salon and beauty appointment booking app. It allows users to discover and
+                      book appointments with hairstylists, nail technicians, makeup artists, and other beauty
+                      professionals. The app provides detailed profiles and portfolios of service providers, along with
+                      client reviews and ratings.‘’
+                    </p>
+                  </div>
+                  <div class="review-card">
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="images/sajna-user-review.webp" alt="user-review" class="profile-img">
+                      <div class="flex-grow-1">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="user-info">
+                            <h6>Theresa Webb</h6>
+                            <span class="time">1 hr</span>
+                          </div>
+                          <div class="star-rating secondary">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <p class="review-text">
+                      ‘’Sajana is a popular salon and beauty appointment booking app. It allows users to discover and
+                      book appointments with hairstylists, nail technicians, makeup artists, and other beauty
+                      professionals. The app provides detailed profiles and portfolios of service providers, along with
+                      client reviews and ratings.‘’
+                    </p>
+                  </div>
+                  <div class="review-card">
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="images/sajna-user-review.webp" alt="user-review" class="profile-img">
+                      <div class="flex-grow-1">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="user-info">
+                            <h6>Theresa Webb</h6>
+                            <span class="time">1 hr</span>
+                          </div>
+                          <div class="star-rating secondary">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <p class="review-text">
+                      ‘’Sajana is a popular salon and beauty appointment booking app. It allows users to discover and
+                      book appointments with hairstylists, nail technicians, makeup artists, and other beauty
+                      professionals. The app provides detailed profiles and portfolios of service providers, along with
+                      client reviews and ratings.‘’
+                    </p>
+                  </div>
+                  <div class="review-card">
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="images/sajna-user-review.webp" alt="user-review" class="profile-img">
+                      <div class="flex-grow-1">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="user-info">
+                            <h6>Theresa Webb</h6>
+                            <span class="time">1 hr</span>
+                          </div>
+                          <div class="star-rating secondary">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <p class="review-text">
+                      ‘’Sajana is a popular salon and beauty appointment booking app. It allows users to discover and
+                      book appointments with hairstylists, nail technicians, makeup artists, and other beauty
+                      professionals. The app provides detailed profiles and portfolios of service providers, along with
+                      client reviews and ratings.‘’
+                    </p>
+                  </div>
+                </div>
+                <nav class="pagination">
+                  <a href="#" class="button prev">Preview</a>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">.......</a>
+                    <a href="#">10</a>
+                  </div>
+                  <a href="#" class="button next">Preview</a>
+                </nav>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="setting-tab-pane" role="tabpanel" aria-labelledby="setting-tab" tabindex="0">
+              <div class="user-profile setting-page">
+                <h2>Settings</h2>
+                <p>Keep your account secure and manage your personal information and social logins.</p>
+                <div class="grid">
+                  <div class="grid-box left-dash">
+                    <div class="content-bg">
+                      <div class="heading-info">
+                        <h3>Personal info</h3>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#personalInformation">Edit</a>
+                      </div>
+                      <div class="text-box">
+                        <div class="user-detail">
+                          <h4>Legal Name</h4>
+                          <p>Protocloud</p>
+                        </div>
+                      </div>
+                      <div class="modal fade personal-information-modal" id="personalInformation" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content content-bg mt-0">
+                            <div class="text-end">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                            <h2>Edit personal info</h2>
+                            <p>Provide your personal details so that we can verify your identity.</p>
+                            <form action="">
+                              <div class="mb-4">
+                                <label for="firstname" class="form-label">First name</label>
+                                <input type="text" class="form-input" id="firstname" name="firstname">
+                              </div>
+                              <div class="mb-4">
+                                <label for="lastname" class="form-label">Last name</label>
+                                <input type="text" class="form-input" id="lastname" name="lastname">
+                              </div>
+                              <div class="d-flex align-items-center justify-content-end gap-2">
+                                <button type="button" class="primary-btn" data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" class="secondary-btn">Save</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-bg">
+                      <div class="heading-info">
+                        <h3>Contact Details</h3>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#editContactDetails">Edit</a>
+                      </div>
+                      <div class="text-box">
+                        <div class="user-detail">
+                          <h4>Mobile number</h4>
+                          <p>+91 ********271</p>
+                        </div>
+                        <div class="user-detail mt-3">
+                          <h4>Email address</h4>
+                          <p>a*********4@gmail.com</p>
+                        </div>
+                      </div>
+                      <div class="modal fade personal-information-modal" id="editContactDetails" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content content-bg mt-0">
+                            <div class="text-end">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                            <h2>Edit contact details</h2>
+                            <p>We care about your data so we’ll always keep it secure.</p>
+                            <form action="">
+                              <div class="mb-4">
+                                <label for="number" class="form-label">Phone number</label>
+                                <input type="text" class="form-input" id="number" name="number">
+                              </div>
+                              <div class="mb-4">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="text" class="form-input" id="email" name="email">
+                              </div>
+                              <div class="d-flex align-items-center justify-content-end gap-2">
+                                <button type="button" class="primary-btn" data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" class="secondary-btn">Save</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-bg">
+                      <div class="heading-info">
+                        <h3>Security</h3>
+                      </div>
+                      <div class="text-box user-settings security-settings">
+                        <div class="user-detail">
+                          <h4>Password</h4>
+                          <p>***********</p>
+                        </div>
+                        <button type="button" class="primary-btn" data-bs-toggle="modal"
+                          data-bs-target="#editPassword">Changes Password</button>
+                        <div class="modal fade personal-information-modal" id="editPassword" tabindex="-1"
+                          aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content content-bg mt-0">
+                              <div class="text-end">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <h2>Change password</h2>
+                              <form action="">
+                                <div class="mb-4">
+                                  <label for="currentpassword" class="form-label">Current password</label>
+                                  <input type="text" class="form-input" id="currentpassword" name="currentpassword">
+                                  <small class="mt-1">If you don't know your current password, you can log out and use
+                                    the Forgot Your Password? link on the Log In page to reset your password.</small>
+                                </div>
+                                <div class="mb-4">
+                                  <label for="newPassword" class="form-label">New password</label>
+                                  <div class="password-box">
+                                    <input type="text" name="newPassword" id="newPassword">
+                                    <button type="button"
+                                      onclick="togglePasswordVisibility('newPassword', 'eye-icon-password')">
+                                      <i class="fa-regular fa-eye-slash" id="eye-icon-password"></i>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="mb-4">
+                                  <label for="verifyPassword" class="form-label">Verify password</label>
+                                  <div class="password-box">
+                                    <input type="text" name="verifyPassword" id="verifyPassword">
+                                    <button type="button"
+                                      onclick="togglePasswordVisibility('verifyPassword', 'eye-icon-confirm')">
+                                      <i class="fa-regular fa-eye-slash" id="eye-icon-confirm"></i>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-end gap-2">
+                                  <button type="button" class="primary-btn" data-bs-dismiss="modal">Cancel</button>
+                                  <button type="button" class="secondary-btn">Save</button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-box">
+                        <div class="user-detail">
+                          <h4>Social logins</h4>
+                          <p>Manage the social logins you use to access to Sajna.</p>
+                          <div class="social-details">
+                            <div class="user-detail">
+                              <img src="images/sajna-user-google-icon.webp" alt="">
+                              <div>
+                                <h4>Google</h4>
+                                <p>Connected</p>
+                              </div>
+                            </div>
+                            <button class="primary-btn">Disconnect</button>
+                          </div>
+                          <div class="social-details">
+                            <div class="user-detail">
+                              <img src="images/sajna-user-facebook-icon.webp" alt="">
+                              <div>
+                                <h4>Facebook</h4>
+                                <p>Not connected</p>
+                              </div>
+                            </div>
+                            <button class="primary-btn">Connect</button>
+                          </div>
+                          <div class="social-details">
+                            <div class="user-detail">
+                              <img src="images/sajna-user-apple-icon.webp" alt="">
+                              <div>
+                                <h4>Apple</h4>
+                                <p>Not connected</p>
+                              </div>
+                            </div>
+                            <button class="primary-btn">Connect</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-bg">
+                      <div class="heading-info">
+                        <h3>Online profile visibility</h3>
+                      </div>
+                      <div class="text-box">
+                        <div class="user-detail">
+                          <p class="mt-0">Hide your professional profile on the marketplace.</p>
+                          <button class="hide-button primary-btn" data-bs-toggle="modal"
+                            data-bs-target="#profileHide">Hide Profile</button>
+                        </div>
+                      </div>
+                      <div class="modal fade personal-information-modal" id="profileHide" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content content-bg mt-0">
+                            <div class="text-end">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                            <h2>Hide your professional profile</h2>
+                            <p>Are you sure you want to hide your professional profile?</p>
+                            <p>Clients won’t be able to access and view your profile, even if they have the direct link
+                              to this profile. You can unhide it later.</p>
+                            <form action="">
+                              <div class="d-flex align-items-center justify-content-end gap-2">
+                                <button type="button" class="primary-btn" data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" class="secondary-btn">Hide profile</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-bg">
+                      <div class="heading-info">
+                        <h3>Delete account</h3>
+                      </div>
+                      <div class="text-box">
+                        <div class="user-detail">
+                          <p class="mt-0">You will delete all your personal info and won't be able to retrieve it. Are
+                            you sure you want to delete your account?</p>
+                          <button class="delete-button">Delete your Account</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-box right-dash">
+                    <div class="content-box mt-0 content-bg">
+                      <img src="images/sajna-personal-info-icon.webp" width="58" height="58" alt="personal-information">
+                      <h2>Your Information</h2>
+                      <p>Details are private and kept between you and Fresha. We hide some account details to protect
+                        your identity.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="work-tab-pane" role="tabpanel" aria-labelledby="work-tab" tabindex="0">
+              <div class="workspaces-page">
+                <div class="review-header d-flex justify-content-between align-items-center">
+                  <div class="text-box">
+                    <h2>Workspaces</h2>
+                    <p>See star ratings and reviews left by clients after their visit. <span class="text-info"> Learn
+                        more</span></p>
+                  </div>
+                  <a href="#" class="btn workspaces-add-btn" data-bs-toggle="modal" data-bs-target="#add-workspace">Add
+                  </a>
+                  <div class="modal fade personal-information-modal" id="add-workspace" tabindex="-1"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content content-bg mt-0">
+                        <h2>You can only be part of one workspace at a time</h2>
+                        <p>You will need to leave your current workspace to add or join a new workspace</p>
+                        <button type="button" class="btn-close-btn" data-bs-dismiss="modal" aria-label="Close">Go
+                          Back</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="workspaces-content">
+                  <h3>Active</h3>
+                  <div class="work-space-listing">
+                    <div class="space-list content-bg m-0">
+                      <div class="space-content">
+                        <div class="img-box">
+                          <img src="images/sajna_work_space.svg" alt="work_space">
+                        </div>
+                        <div class="text-box">
+                          <h4>Smart Salon</h4>
+                          <p>Owner access</p>
+                          <span>Joined Mar 31, 2023</span>
+                        </div>
+                      </div>
+                      <div class="manage-space">
+                        <a href="#" class="btn manage-btn manage-space-btn">Manage</a>
+                      </div>
+                    </div>
+                    <div class="space-list content-bg m-0">
+                      <div class="space-content">
+                        <div class="img-box">
+                          <img src="images/sajna_work_space.svg" alt="work_space">
+                        </div>
+                        <div class="text-box">
+                          <h4>Smart Salon</h4>
+                          <p>Owner access</p>
+                          <span>Joined Mar 31, 2023</span>
+                        </div>
+                      </div>
+                      <div class="manage-space">
+                        <a href="#" class="btn manage-btn manage-space-btn">Manage</a>
+                      </div>
+                    </div>
+                    <div class="space-list content-bg m-0">
+                      <div class="space-content">
+                        <div class="img-box">
+                          <img src="images/sajna_work_space.svg" alt="work_space">
+                        </div>
+                        <div class="text-box">
+                          <h4>Smart Salon</h4>
+                          <p>Owner access</p>
+                          <span>Joined Mar 31, 2023</span>
+                        </div>
+                      </div>
+                      <div class="manage-space">
+                        <a href="#" class="btn manage-btn manage-space-btn">Manage</a>
+                      </div>
+                    </div>
+                    <div class="space-list content-bg m-0">
+                      <div class="space-content">
+                        <div class="img-box">
+                          <img src="images/sajna_work_space.svg" alt="work_space">
+                        </div>
+                        <div class="text-box">
+                          <h4>Smart Salon</h4>
+                          <p>Owner access</p>
+                          <span>Joined Mar 31, 2023</span>
+                        </div>
+                      </div>
+                      <div class="manage-space">
+                        <a href="#" class="btn manage-btn manage-space-btn">Manage</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="popup-overlay" id="popup-manage">
+                    <div class="popup-content">
+                      <div class="popup-header">
+                        <div class="text-box">
+                          <h2>Smart Salon</h2>
+                          <p>Manage your workspace settings. <span class="text-info"> Learn more</span></p>
+                        </div>
+                        <span class="close-btn" id="closemanage"><i class="fa-solid fa-xmark"></i></span>
+                      </div>
+
+                      <div class="manage-work-spaces">
+                        <div class="content-bg edit-work-space mt-0 mb-3">
+                          <div class="work-header review-header">
+                            <h4>Calendar sync</h4>
+                          </div>
+                          <a href="#" class="btn cal-btn" data-bs-toggle="modal" data-bs-target="#sync-calender"><i
+                              class="fa-solid fa-plus"></i> Sync a calendar</a>
+                        </div>
+                        <div class="content-bg edit-work-space mt-0 mb-3">
+                          <div class="work-header popup-header review-header">
+                            <h4>Workspace notifications</h4>
+                            <a href="#" class="btn manage-notify" data-bs-toggle="modal"
+                              data-bs-target="#manage-notification">Manage</a>
+                          </div>
+                          <p>You have chosen to be notified about <b>activity concerning all team members,</b> and have
+                            <b>19 notifications</b> settings turned on.
+                          </p>
+                        </div>
+
+                        <a href="#" class="btn delete-btn" data-bs-toggle="modal"
+                          data-bs-target="#delete-workspace">Delete workspace</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="modal fade edit-profile-modal content-bg m-0" id="sync-calender" data-bs-backdrop="static"
+                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="personal-detail-buttons justify-content-end mb-3">
+                          <a href="#" class="close-button" data-bs-dismiss="modal">Close</a>
+                          <a href="#" class="save-button">Save</a>
+                        </div>
+                        <div class="text-box">
+                          <h2 class="mb-3">Choose which calendar you would like to sync</h2>
+                          <p>Sync your Google calendar or block out your Fresha appointments on other calendars. <span
+                              class="text-info">Learn
+                              more</span></p>
+                        </div>
+                        <div class="choose-calender content-bg">
+                          <a href="#" class="calender-box google-calender"><img src="images/sajna_calendar_google.svg"
+                              alt="calendar_google"> Google Calendar</a>
+                        </div>
+                        <div class="choose-calender content-bg other-calender">
+                          <a href="#" class="calender-box "><img src="images/sajna_calendar.svg" alt="calendar_google">
+                            Other Calendars</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade edit-profile-modal content-bg m-0" id="manage-notification"
+                    data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="personal-detail-buttons justify-content-end mb-3">
+                          <a href="#" class="close-button" data-bs-dismiss="modal">Close</a>
+                          <a href="#" class="save-button">Save</a>
+                        </div>
+                        <div class="text-box">
+                          <h2 class="mb-3">Workspace notification settings</h2>
+                          <p>Stay up to date with notifications. <span class="text-info">Learn More</span></p>
+                        </div>
+
+                        <div class="manage-notifications">
+                          <div class="notification-box content-bg">
+                            <h4>Activity and locations</h4>
+                            <p>Choose which events and locations you want to be notified about.</p>
+                            <div class="input-box d-flex flex-column gap-1">
+                              <label>Notify me about</label>
+                              <select name="appointmentSubscription" id="select-subscriptions">
+                                <option value="all">Activity concerning all team members</option>
+                                <option value="own">My activity only</option>
+                              </select>
+                            </div>
+                            <div class="input-box d-flex flex-column gap-1">
+                              <label>For locations</label>
+                              <input type="text" placeholder="Smart Salon - Bangalore">
+                            </div>
+                          </div>
+                          <div class="notification-box content-bg">
+                            <h4>Appointments</h4>
+                            <p>Choose the types of appointment activity to get notified about.</p>
+                            <div class="input-box">
+                              <input type="checkbox">
+                              <div>
+                                <label>New appointments & marketplace sales</label>
+                                <small>When new appointments are booked and vouchers or memberships bought</small>
+                              </div>
+                            </div>
+                            <div class="input-box">
+                              <input type="checkbox">
+                              <div>
+                                <label>Confirmations</label>
+                                <small>When appointments are marked as confirmed</small>
+                              </div>
+                            </div>
+                            <div class="input-box">
+                              <input type="checkbox">
+                              <div>
+                                <label>Reschedules</label>
+                                <small>When appointment times are updated</small>
+                              </div>
+                            </div>
+                            <div class="input-box">
+                              <input type="checkbox">
+                              <div>
+                                <label>No-shows</label>
+                                <small>When appointments are marked as no-show</small>
+                              </div>
+                            </div>
+                            <div class="input-box">
+                              <input type="checkbox">
+                              <div>
+                                <label>Arrivals</label>
+                                <small>When appointments are marked as arrived</small>
+                              </div>
+                            </div>
+                            <div class="input-box">
+                              <input type="checkbox">
+                              <div>
+                                <label>Started</label>
+                                <small>When appointments are marked as started</small>
+                              </div>
+                            </div>
+                            <div class="input-box">
+                              <input type="checkbox">
+                              <div>
+                                <label>Cancellations</label>
+                                <small>When appointments become cancelled</small>
+                              </div>
+                            </div>
+                            <div class="input-box">
+                              <input type="checkbox">
+                              <div>
+                                <label>New waitlist entries</label>
+                                <small>When new waitlist entries are added</small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="notification-box content-bg">
+                            <h4>Online sales</h4>
+                            <p>Choose the types of online sales activity to get notified about.</p>
+                            <div class="input-box">
+                              <input type="checkbox">
+                              <div>
+                                <label>Product orders</label>
+                                <small>When clients purchase your products online</small>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="notification-box content-bg">
+                            <h4>Online tips</h4>
+                            <p>Choose the types of online tips activity to get notified about.</p>
+                            <div class="input-box">
+                              <input type="checkbox">
+                              <div>
+                                <label>Tips</label>
+                                <small>When clients leave a tip online</small>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="notification-box content-bg">
+                            <h4>Ratings and reviews</h4>
+                            <p>Choose how you want to be notified about new reviews.</p>
+                            <div class="input-box">
+                              <input type="checkbox">
+                              <div>
+                                <label>Reviews</label>
+                                <small>When clients leave a review online</small>
+                              </div>
+                            </div>
+                            <div class="input-box">
+                              <input type="checkbox">
+                              <div>
+                                <label>Activity summary email</label>
+                                <small>Opt into a summary report of reviews</small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="notification-box content-bg">
+                            <h4>Product stock</h4>
+                            <p>Choose the types of product stock notifications to get notified about.</p>
+                            <div class="input-box">
+                              <input type="checkbox">
+                              <div>
+                                <label>Low stock alerts</label>
+                                <small>When a particular product reaches its low stock level</small>
+                              </div>
+                            </div>
+                            <div class="input-box">
+                              <input type="checkbox">
+                              <div>
+                                <label>Low stock summary</label>
+                                <small>Opt into a summary of all products low in stock</small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="notification-box content-bg">
+                            <h4>Marketing</h4>
+                            <p>Choose the types of marketing activity to get notified about.</p>
+                            <div class="input-box">
+                              <input type="checkbox">
+                              <div>
+                                <label>Blast campaign resending</label>
+                                <small>Receive reminders to resend blast campaigns to clients who have not yet opened
+                                  them</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade edit-profile-modal content-bg m-0" id="delete-workspace"
+                    data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="personal-detail-buttons justify-content-end mb-3">
+                          <a href="#" class="close-button" data-bs-dismiss="modal">Close</a>
+                          <a href="#" class="save-button">Continue</a>
+                        </div>
+                        <div class="text-box">
+                          <h2 class="mb-3">We’re sorry you want to delete your workspace</h2>
+                          <p class="mb-2">Why is it you’re wanting to delete your entire workspace? Can we change your
+                            mind? Drop us a line at <span class="text-info">hello@sajna.com.</span></p>
+                          <p>If you wish to continue please let us know the reason for deleting your workspace below as
+                            this will remove your workspace and all your staff.</p>
+                        </div>
+
+                        <form class="delete-workspace-form">
+                          <div class="input-box">
+                            <input type="radio" name="delete-workspace">
+                            <label for="delete-workspace">I switched to another software</label>
+                          </div>
+                          <div class="input-box">
+                            <input type="radio" name="delete-workspace">
+                            <label for="delete-workspace">I can't find the features I need</label>
+                          </div>
+                          <div class="input-box">
+                            <input type="radio" name="delete-workspace">
+                            <label for="delete-workspace">I no longer have a business</label>
+                          </div>
+                          <div class="input-box">
+                            <input type="radio" name="delete-workspace">
+                            <label for="delete-workspace">Fresha is difficult to use</label>
+                          </div>
+                          <div class="input-box">
+                            <input type="radio" name="delete-workspace">
+                            <label for="delete-workspace">Other</label>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="help-tab-pane" role="tabpanel" aria-labelledby="help-tab" tabindex="0">
+              <div class="help-content help-sidebar" id="helpSidebar">
+                <div class="help-header">
+                  <h2>What can we help you with</h2>
+                  <p>Tell us a little more about you and what you need help with</p>
+                  <span class="close-btn" id="closeSidebar"><i class="fa-solid fa-xmark"></i></span>
+                </div>
+                <div class="help-sidebar-inner">
+                  <input type="text" class="search-input" placeholder="Type in a query or topic">
+
+                  <h3>Top articles</h3>
+                  <ul class="help-list">
+                    <li>
+                      <a href="#">
+                        <h4>Add and manage client patch tests</h4>
+                        <p>Incorporating patch tests for certain services to detect...</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <h4>Create email blast campaigns</h4>
+                        <p>Craft and launch effective email campaigns that drive...</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <h4>Creating smart pricing</h4>
+                        <p>Set up smart pricing to automatically increase and...</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <h4>Add team members</h4>
+                        <p>Onboard new team members by setting them up with ...</p>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <a href="#" class="help-link">Can't find what you're looking for?</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="lang-tab-pane" role="tabpanel" aria-labelledby="lang-tab" tabindex="0">
+              <div class="language-page">
+                <div class="review-header d-flex justify-content-between align-items-center">
+                  <div class="text-box">
+                    <h2>Languages</h2>
+                    <p>Add all the languages you speak and understand to improve communication with your clients</p>
+                  </div>
+                </div>
+                <div class="language-content">
+                  <h3>English</h3>
+
+                  <div class="selected-languages" id="selectedLanguages">
+
+                  </div>
+
+                  <a href="#" class="btn add-lang-btn" data-bs-toggle="modal" data-bs-target="#add-language">Add <i
+                      class="fa-solid fa-angle-down"></i></a>
+                  <div class="modal fade personal-information-modal" id="add-language" tabindex="-1"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content content-bg mt-0">
+                        <div class="popup-header">
+                          <h2>Add Language</h2>
+                          <button type="button" class="btn-close-btn" data-bs-dismiss="modal" aria-label="Close"><i
+                              class="fa-solid fa-xmark"></i></button>
+                        </div>
+
+                        <div class="lang-container">
+                          <input type="search" id="search" class="search-box" placeholder="Search">
+                          <div id="lang-dropdown" class="dropdown"></div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade edit-profile-modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <section class="my-account user-account-info">
+          <div class="container-fluid edit-profile">
+            <div class="grid">
+              <div class="grid-box right-edit content-bg" id="right-user-edit">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="personal-detail-tab" data-bs-toggle="tab"
+                      data-bs-target="#personal-detail-tab-pane" type="button" role="tab"
+                      aria-controls="personal-detail-tab-pane" aria-selected="true"><img class
+                        src="images/sajna_profile_icon.svg" alt="profile"> Personal details</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="language-tab" data-bs-toggle="tab" data-bs-target="#language-tab-pane"
+                      type="button" role="tab" aria-controls="language-tab-pane" aria-selected="false">
+                      <img class src="images/sajna_language_icon.svg" alt="Language">
+                      Languages</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="interest-tab" data-bs-toggle="tab" data-bs-target="#interest-tab-pane"
+                      type="button" role="tab" aria-controls="interest-tab-pane" aria-selected="false">
+                      <img class src="images/sajna_interest_icon_01.svg" alt="interest">
+                      Interests </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="social-link-tab" data-bs-toggle="tab"
+                      data-bs-target="#social-link-tab-pane" type="button" role="tab"
+                      aria-controls="social-link-tab-pane" aria-selected="false">
+                      <img class src="images/sajna_social_icon.svg" alt="social_link">
+                      Social Links</button>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="grid-box left-edit content-bg" id="left-user-edit">
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="personal-detail-tab-pane" role="tabpanel"
+                    aria-labelledby="personal-detail-tab" tabindex="0">
+                    <div class="personal-detail">
+                      <div
+                        class="d-flex flex-md-row flex-column justify-content-between align-items-md-center align-items-start review-header">
+                        <div class="text-box">
+                          <h3 class="fw-semibold">Edit your online profile</h3>
+                        </div>
+                        <div class="personal-detail-buttons">
+                          <a href="#" class="close-button" data-bs-dismiss="modal">Close</a>
+                          <a href="#" class="save-button">Save</a>
+                        </div>
+                      </div>
+                      <div class="img-box">
+                        <div class="text-box">
+                          <h2>Your avatar</h2>
+                          <p>See star ratings and reviews left by clients after their visit. <span
+                              class="text-info">&nbsp;Learn more</span></p>
+                        </div>
+                        <div class="edit-user-img text-center">
+                          <div class="edit-img">
+                            <img src="images/sajna_user_profile_avatar.svg" alt="profile">
+                            <i class="fa-solid fa-pen"></i>
+                          </div>
+                          <!-- <a href="#" class="btn edit-btn edit-profile" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Edit</a> -->
+                        </div>
+                      </div>
+                      <div class="form-container">
+                        <h2>Personal details</h2>
+                        <p>Primary information about yourself visible to others.</p>
+                        <form action="">
+                          <div class="mb-4">
+                            <label for="displayName" class="form-label">Display name</label>
+                            <input type="text" class="form-input" id="displayName" value="Protolcloud">
+                          </div>
+
+                          <div class="mb-4">
+                            <label for="headline" class="form-label">Headline</label>
+                            <input type="text" class="form-input" id="headline" value="Manicure Specialist">
+                          </div>
+
+                          <div class="mb-4">
+                            <label for="aboutYou" class="form-label">About you</label>
+                            <textarea class="form-textarea"></textarea>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="language-tab-pane" role="tabpanel" aria-labelledby="language-tab"tabindex="0">
+                      <div class="language-page">
+                <div class="review-header d-flex justify-content-between align-items-center">
+                  <div class="text-box">
+                    <h2>Languages</h2>
+                    <p>Add all the languages you speak and understand to improve communication with your clients</p>
+                  </div>
+                </div>
+                <div class="language-content">
+                  <h3>English</h3>
+
+                  <div class="selected-languages" id="selectedLanguages">
+
+                  </div>
+
+                  <a href="#" class="btn add-lang-btn" data-bs-toggle="modal" data-bs-target="#add-language">Add <i
+                      class="fa-solid fa-angle-down"></i></a>
+                  <div class="modal fade personal-information-modal" id="add-language" tabindex="-1"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content content-bg mt-0">
+                        <div class="popup-header">
+                          <h2>Add Language</h2>
+                          <button type="button" class="btn-close-btn" data-bs-dismiss="modal" aria-label="Close"><i
+                              class="fa-solid fa-xmark"></i></button>
+                        </div>
+
+                        <div class="lang-container">
+                          <input type="search" id="search" class="search-box" placeholder="Search">
+                          <div id="lang-dropdown" class="dropdown"></div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+                  </div>
+                  <div class="tab-pane fade" id="interest-tab-pane" role="tabpanel" aria-labelledby="interest-tab"
+                    tabindex="0">
+                    <div class="interest-tab">
+                      <div
+                        class="d-flex flex-md-row flex-column justify-content-between align-items-md-center align-items-start review-header">
+                        <div class="text-box">
+                          <h3 class="fw-semibold">Edit your online profile</h3>
+                        </div>
+                        <div class="personal-detail-buttons">
+                          <a href="#" class="close-button" data-bs-dismiss="modal">Close</a>
+                          <a href="#" class="save-button">Save</a>
+                        </div>
+                      </div>
+                      <div class="text-box review-header">
+                        <h2>Intersets</h2>
+                        <p>Pick up to 10 things you love. This will help customers find ways to connect with you.</p>
+                      </div>
+                      <div class="values-section review-header">
+                        <h5>Values and traits</h5>
+                        <div class="content-box mt-md-3">
+                          <button class="interest-badges"><i class="badges-icon">💙</i> <span>Empathy</span></button>
+                          <button class="interest-badges"><i class="badges-icon">☀️</i> <span>Positivity</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏆</i> <span>Being
+                              active</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🚀</i> <span>Ambition</span></button>
+                          <button class="interest-badges"><i class="badges-icon">❤️</i>
+                            <span>Family-oriented</span></button>
+                          <button class="interest-badges"><i class="badges-icon">😎</i> <span>Confidence</span></button>
+                          <button class="interest-badges"><i class="badges-icon">✏️</i> <span>Creativity</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🌳</i>
+                            <span>Sustainability</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎓</i>
+                            <span>Intelligence</span></button>
+                        </div>
+                      </div>
+                      <div class="values-section review-header">
+                        <h5>Values and allyship</h5>
+                        <div class="content-box mt-md-3">
+                          <button class="interest-badges"><i class="badges-icon">💛</i> <span>Feminism</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🤝</i>
+                            <span>Inclusivity</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🌍</i>
+                            <span>Environmentalism</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📜</i> <span>Human
+                              rights</span></button>
+                          <button class="interest-badges"><i class="badges-icon">☑️</i> <span>Voter
+                              rights</span></button>
+                          <button class="interest-badges"><i class="badges-icon">⚧️</i> <span>Trans
+                              rights</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🚫</i> <span>Stop Asian
+                              Hate</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🖤</i> <span>Black Lives
+                              Matter</span></button>
+                          <button class="interest-badges"><i class="badges-icon">‍🌈</i> <span>LGBTQ+
+                              rights</span></button>
+                        </div>
+                      </div>
+                      <div class="values-section review-header">
+                        <h5>Self care</h5>
+                        <div class="content-box mt-md-3">
+                          <button class="interest-badges"><i class="badges-icon">🧖🏻‍♀️</i>
+                            <span>Skincare</span></button>
+                          <button class="interest-badges"><i class="badges-icon">💬</i> <span>Deep chats</span></button>
+                          <button class="interest-badges"><i class="badges-icon">💜</i> <span>Therapy</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🌳</i> <span>Time
+                              offline</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🌀</i>
+                            <span>Spiritualist</span></button>
+                          <button class="interest-badges"><i class="badges-icon">💤</i> <span>Sleeping
+                              well</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🧠</i>
+                            <span>Mindfulness</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🥦</i> <span>Nutrition</span></button>
+                        </div>
+                      </div>
+                      <div class="values-section review-header">
+                        <h5>Sports</h5>
+                        <div class="content-box mt-md-3">
+                          <button class="interest-badges"><i class="badges-icon">⛷️</i> <span>Skiing</span></button>
+                          <button class="interest-badges"><i class="badges-icon">👟</i> <span>Running</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏈</i> <span>AFL</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏒</i> <span>Hockey</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🤸</i> <span>Pilates</span></button>
+                          <button class="interest-badges"><i class="badges-icon">⚽️</i> <span>Soccer</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏓</i> <span>Pickleball</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏏</i> <span>Cricket</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏋️‍♀️</i> <span>Gym</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏅</i>
+                            <span>Powerlifting</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏈</i> <span>American
+                              football</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🤸‍♀️</i>
+                            <span>Gymnastics</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🥏</i> <span>Frisbee</span></button>
+                          <button class="interest-badges"><i class="badges-icon">😌</i> <span>Meditation</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🛹</i>
+                            <span>Skateboarding</span></button>
+                          <button class="interest-badges"><i class="badges-icon">⚾️</i> <span>Baseball</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎱</i>
+                            <span>Rollerskating</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏊</i> <span>Swimming</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🧘‍♀️</i> <span>Yoga</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏐</i> <span>Netball</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🥋</i> <span>Martial
+                              arts</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🥎</i> <span>Softball</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🤺</i> <span>Fencing</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🤸‍♂️</i> <span>Parkour</span></button>
+                          <button class="interest-badges"><i class="badges-icon">💪</i>
+                            <span>Bodybuilding</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🥵</i> <span>HIIT</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🥊</i> <span>Boxing</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🤾‍♀️</i>
+                            <span>Handball</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🧗</i> <span>Rock
+                              climbing</span></button>
+                          <button class="interest-badges"><i class="badges-icon">♟️</i> <span>Chess</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🚴‍♂️</i> <span>Cycling</span></button>
+                          <button class="interest-badges"><i class="badges-icon">⛵️</i> <span>Sailing</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏂</i>
+                            <span>Snowboarding</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🚣</i> <span>Rowing</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏐</i> <span>Volleyball</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎳</i> <span>Bowling</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🙌</i> <span>Functional
+                              fitness</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎽</i> <span>Athletics</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏉</i> <span>Rugby</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏸</i> <span>Badminton</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏇</i> <span>Horse
+                              riding</span></button>
+                          <button class="interest-badges"><i class="badges-icon">💓</i> <span>Cardio</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏎️</i> <span>Go
+                              karting</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏄</i> <span>Surfing</span></button>
+                          <button class="interest-badges"><i class="badges-icon">⛳️</i> <span>Golf</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏓</i> <span>Table
+                              tennis</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎾</i> <span>Tennis</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🤿</i> <span>Scuba
+                              diving</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏀</i> <span>Basketball</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎪</i> <span>Circus
+                              skill</span></button>
+                        </div>
+                        <a href="#">+29 More</a>
+                      </div>
+                      <div class="values-section review-header">
+                        <h5>Hobbies and interests</h5>
+                        <div class="content-box mt-md-3">
+                          <button class="interest-badges"><i class="badges-icon">💽</i> <span>DJing</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎙️</i> <span>Stand up</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🧑‍🍳</i> <span>Cooking</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎭</i> <span>Theatre</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎲</i> <span>Board
+                              games</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🥐</i> <span>Baking</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎊</i> <span>Festivals</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🚂</i>
+                            <span>Trainspotting</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏛️</i> <span>Museums and
+                              galleries</span></button>
+                          <button class="interest-badges"><i class="badges-icon">👑</i> <span>Drag shows</span></button>
+                          <button class="interest-badges"><i class="badges-icon">👯</i> <span>LGBTQ+
+                              nightlife</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎄</i> <span>Christmas
+                              markets</span></button>
+                          <button class="interest-badges"><i class="badges-icon">✈️</i>
+                            <span>Planespotting</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎮</i> <span>Video
+                              games</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎟️</i> <span>Gigs</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎤</i> <span>Karaoke</span></button>
+                          <button class="interest-badges"><i class="badges-icon">☕️</i>
+                            <span>Cafe-hopping</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🍹</i> <span>Bars</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎱</i> <span>Gardening</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎱</i> <span>Nightclubs</span></button>
+                        </div>
+                      </div>
+                      <div class="values-section review-header">
+                        <h5>Film and TV</h5>
+                        <div class="content-box mt-md-3">
+                          <button class="interest-badges"><i class="badges-icon">📺</i> <span>Bollywood</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📺</i>
+                            <span>Documentaries</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📺</i> <span>Thriller</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📺</i> <span>Action and
+                              adventure</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📺</i> <span>Horror</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📺</i> <span>Animated</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📺</i> <span>Drama</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📺</i> <span>Mystery</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📺</i> <span>Reality TV</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📺</i> <span>Comedy</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📺</i> <span>Romance</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📺</i> <span>Game shows</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📺</i> <span>Anime</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📺</i> <span>Indie</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📺</i> <span>Fantasy</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📺</i> <span>Sci-fi</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📺</i> <span>Rom-com</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📺</i> <span>Cooking
+                              shows</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📺</i> <span>K-Drama</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📺</i> <span>Superhero</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📺</i> <span>Crime</span></button>
+                        </div>
+                      </div>
+                      <div class="values-section review-header">
+                        <h5>Books</h5>
+                        <div class="content-box mt-md-3">
+                          <button class="interest-badges"><i class="badges-icon">📖</i>
+                            <span>Biographies</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📖</i> <span>Horror</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📖</i> <span>Classics</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📖</i> <span>Comedy</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📖</i> <span>Mystery</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📖</i> <span>Crime</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📖</i> <span>History</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📖</i> <span>Poetry</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📖</i> <span>Science</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📖</i> <span>Romance</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📖</i> <span>Thriller</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📖</i> <span>Sci-fi</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📖</i> <span>Comic
+                              books</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📖</i> <span>Philosophy</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📖</i> <span>Manga</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📖</i> <span>Action and
+                              adventure</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📖</i> <span>Fantasy</span></button>
+                          <button class="interest-badges"><i class="badges-icon">📖</i> <span>Psychology</span></button>
+                        </div>
+                      </div>
+                      <div class="values-section review-header">
+                        <h5>Music</h5>
+                        <div class="content-box mt-md-3">
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Hip hop</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Arab</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Country</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Punk</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Blues</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Classical</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Soul</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>R&B</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Reggae</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>K-pop</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>EDM</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Indie</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Rap</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Funk</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Jazz</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Afro</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Pop</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Metal</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Traditional Irish
+                              Music</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Techno</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Folk and
+                              acoustic</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>House</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Electronic</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Latin</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Rock</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Desi</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Desi</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Desi</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Desi</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Desi</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Desi</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Desi</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Desi</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Desi</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Desi</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Desi</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Desi</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎶</i> <span>Desi</span></button>
+                        </div>
+                        <a href="#">+5 More</a>
+                      </div>
+                      <div class="values-section review-header">
+                        <h5>Food and drink</h5>
+                        <div class="content-box mt-md-3">
+                          <button class="interest-badges"><i class="badges-icon">🎣</i> <span>Fish and
+                              chips</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🍣</i> <span>Sushi</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🥡</i> <span>Takeaways</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🍫</i> <span>Sweet
+                              tooth</span></button>
+                          <button class="interest-badges"><i class="badges-icon">☕️</i> <span>Coffee</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🍸</i> <span>Gin</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🌱</i> <span>Vegan</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🍺</i> <span>Beer</span></button>
+                          <button class="interest-badges"><i class="badges-icon">☕️</i> <span>Tea</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🍷</i> <span>Wine</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🍹</i> <span>Cocktails</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🍕</i> <span>Pizza</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🥃</i> <span>Whiskey</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🌮</i> <span>Foodie</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎱</i> <span>Boba tea</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🐟</i>
+                            <span>Pescatarian</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🥦</i> <span>Vegetarian</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🍗</i> <span>Sunday
+                              roast</span></button>
+                        </div>
+                      </div>
+                      <div class="values-section review-header">
+                        <h5>Travelling</h5>
+                        <div class="content-box mt-md-3">
+                          <button class="interest-badges"><i class="badges-icon">🛣️</i> <span>Road
+                              trips</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🛀</i> <span>Spa
+                              weekends</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎣</i> <span>Fishing
+                              trips</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏝️</i> <span>Beaches</span></button>
+                          <button class="interest-badges"><i class="badges-icon">☃️</i> <span>Winter
+                              Sports</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏡</i> <span>Country
+                              escapes</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🎒</i>
+                            <span>Backpacking</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🌃</i> <span>City
+                              breaks</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🏕️</i> <span>Camping</span></button>
+                        </div>
+                      </div>
+                      <div class="values-section review-header">
+                        <h5>Pets</h5>
+                        <div class="content-box mt-md-3">
+                          <button class="interest-badges"><i class="badges-icon">🐇</i> <span>Rabbits</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🐀</i> <span>Rats</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🐍</i> <span>Snakes</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🦜</i> <span>Birds</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🐠</i> <span>Fish</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🐝</i> <span>Beekeeping</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🦎</i> <span>Lizards</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🐱</i> <span>Cats</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🐶</i> <span>Dogs</span></button>
+                          <button class="interest-badges"><i class="badges-icon">🐢</i> <span>Turtles</span></button>
+                        </div>
+                      </div>
+                      <div class="values-section review-header">
+                        <h5>Astrology</h5>
+                        <div class="content-box mt-md-3">
+                          <button class="interest-badges"><i class="badges-icon">♊️</i> <span>Gemini</span></button>
+                          <button class="interest-badges"><i class="badges-icon">♋️</i> <span>Cancer</span></button>
+                          <button class="interest-badges"><i class="badges-icon">♍️</i> <span>Virgo</span></button>
+                          <button class="interest-badges"><i class="badges-icon">♐️</i>
+                            <span>Sagittarius</span></button>
+                          <button class="interest-badges"><i class="badges-icon">♏️</i> <span>Scorpio</span></button>
+                          <button class="interest-badges"><i class="badges-icon">♎️</i> <span>Libra</span></button>
+                          <button class="interest-badges"><i class="badges-icon">♑️</i> <span>Capricorn</span></button>
+                          <button class="interest-badges"><i class="badges-icon">♈️</i> <span>Aries</span></button>
+                          <button class="interest-badges"><i class="badges-icon">♓️</i> <span>Pisces</span></button>
+                          <button class="interest-badges"><i class="badges-icon">♌️</i> <span>Leo</span></button>
+                          <button class="interest-badges"><i class="badges-icon">♒️</i> <span>Aquarius</span></button>
+                          <button class="interest-badges"><i class="badges-icon">♉️</i> <span>Taurus</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="social-link-tab-pane" role="tabpanel" aria-labelledby="social-link-tab"
+                    tabindex="0">
+                    <div class="social-link-tab">
+                      <div
+                        class="d-flex flex-md-row flex-column justify-content-between align-items-md-center align-items-start review-header">
+                        <div class="text-box">
+                          <h3 class="fw-semibold">Edit your online profile</h3>
+                        </div>
+                        <div class="personal-detail-buttons">
+                          <a href="#" class="close-button" data-bs-dismiss="modal">Close</a>
+                          <a href="#" class="save-button">Save</a>
+                        </div>
+                      </div>
+                      <div class="text-box">
+                        <h2>Social Links</h2>
+                        <p>Make it easy for your clients to find you and follow you on your social platforms</p>
+                      </div>
+                      <form action="">
+                        <div class="social-content">
+                          <label class="form-label fw-bold">Instagram</label>
+                          <div class="social-input">
+                            <i class="fab fa-instagram"></i>
+                            <input type="text" class="" placeholder="@instagram">
+                          </div>
+                        </div>
+                        <div class="social-content">
+                          <label class="form-label fw-bold">TikTok</label>
+                          <div class="social-input">
+                            <i class="fa-brands fa-tiktok"></i>
+                            <input type="text" class="" placeholder="@tiktok">
+                          </div>
+                        </div>
+                        <div class="social-content">
+                          <label class="form-label fw-bold">Facebook</label>
+                          <div class="social-input">
+                            <i class="fa-brands fa-facebook"></i>
+                            <input type="text" class="" placeholder="@facebook">
+                          </div>
+                        </div>
+                      </form>
+                      <a href="#" class="add-btn" data-bs-toggle="modal" data-bs-target="#addSocialLink">Add <i
+                          class="fa-solid fa-angle-down"></i></a>
+                      <div class="modal fade personal-information-modal" id="addSocialLink" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" style="display: none;">
+                        <div class="modal-dialog">
+                          <div class="modal-content content-bg mt-0">
+                            <div class="text-end">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                            <h2>Change password</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/jquery.min.js"></script>
+
+
+</body>
+
+</html>
